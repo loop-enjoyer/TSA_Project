@@ -20,7 +20,7 @@ Its yearly seasonality is driven by the weather, with two peaks: winter (heating
 
 ### 1. ETS decomposition + ARIMA (understand and explore)
 
-- Decompose Yₜ into trend (Tₜ), seasonality (Sₜ) and residual (Rₜ).
+- Decompose Yₜ into trend (Tₜ), seasonality (Sₜ) and residual (Rₜ). Two trends are compared: a piecewise linear trend (breakpoints found by grid search) and a double exponential smoothing trend.
 - Model the residual Rₜ with ARIMA:
   - stationarity checks (ADF / KPSS),
   - ACF / PACF analysis to choose the (p, d, q) orders,
